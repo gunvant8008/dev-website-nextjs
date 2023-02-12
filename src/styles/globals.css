@@ -37,3 +37,7 @@ textarea {
 .link {
   @apply hover:bg-white ease-in duration-200 dark:hover:text-black;
 }
+
+.project-link {
+  @apply px-5 py-1 m-1 transition ease-linear bg-gray-600 dark:bg-gray-200 text-white dark:text-black flex-1 text-center;
+}

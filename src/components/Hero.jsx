@@ -23,13 +23,13 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap justify-center">
             <Link
-              className="self-center px-8 py-3 rounded border-2 border-white m-1 font-bold"
+              className="self-center px-8 py-3 rounded border-2 border-black m-1 font-bold bg-gray-200 dark:text-black"
               href={`/projects`}
             >
               <span>PROJECTS</span>
             </Link>
             <Link
-              className="self-center px-8 py-3 rounded border-2 border-white m-1 font-bold"
+              className="self-center px-8 py-3 rounded border-2 border-black m-1 font-bold bg-gray-200 dark:text-black"
               href={`/blogs`}
             >
               BLOGS

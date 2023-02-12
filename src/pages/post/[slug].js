@@ -33,7 +33,6 @@ export async function getStaticProps({ params: { slug } }) {
 // store the result in a static html/js file.
 
 export default function PostPage({ frontmatter, content }) {
-  console.log(frontmatter)
   return (
     <div className="prose mt-20 p-10  flex flex-col items-center justify-center w-[95vw] ">
       <h1 className="text-2xl md:text-4xl dark:text-white">
