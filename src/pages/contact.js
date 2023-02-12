@@ -21,9 +21,9 @@ const contact = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>Glasgow City, Scotland, UK</span>
+              <span>Currently In Glasgow, UK</span>
             </p>
-            <p className="flex items-center">
+            {/* <p className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -33,7 +33,7 @@ const contact = () => {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
               </svg>
               <span>123456789</span>
-            </p>
+            </p> */}
             <p className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,40 +44,51 @@ const contact = () => {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <span>gunvant8008@gmail.com</span>
+              <span>gunvant.sharma@icloud.com</span>
             </p>
           </div>
         </div>
         <form
-          novalidate=""
+          action="https://getform.io/f/db2686ce-c800-4b93-913b-3ef95ada7712"
+          method="POST"
           className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
         >
           <label className="block">
             <span className="mb-1">Full name</span>
             <input
+              required
               type="text"
-              placeholder="Leroy Jenkins"
+              name="name"
+              minLength="4"
+              maxLength="50"
+              placeholder="Name..."
               className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800"
             />
           </label>
           <label className="block">
             <span className="mb-1">Email address</span>
             <input
+              required
               type="email"
-              placeholder="leroy@jenkins.com"
+              name="email"
+              minLength="5"
+              maxLength="50"
+              placeholder="email@email.com"
               className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800"
             />
           </label>
           <label className="block">
             <span className="mb-1">Message</span>
             <textarea
+              name="message"
+              required
               rows="3"
               className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800"
             ></textarea>
           </label>
           <button
-            type="button"
-            className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-gray-900 focus:ring-violet-400 hover:ring-violet-400"
+            type="submit"
+            className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-yellow-400 dark:text-gray-900 focus:ring-yellow-400 hover:ring-yellow-400"
           >
             Submit
           </button>

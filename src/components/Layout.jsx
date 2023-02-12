@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
-import SunLogo from "./SunLogo"
-import MoonLogo from "./MoonLogo"
+import SunLogo from "./logoIcons/SunLogo"
+import MoonLogo from "./logoIcons/MoonLogo"
 
 function Header() {
   const { systemTheme, theme, setTheme } = useTheme()
