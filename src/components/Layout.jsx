@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
+import SunLogo from "./SunLogo"
+import MoonLogo from "./MoonLogo"
 
 function Header() {
   const { systemTheme, theme, setTheme } = useTheme()
@@ -14,87 +16,78 @@ function Header() {
     if (!mounted) return null
     const currentTheme = theme === "system" ? systemTheme : theme
     if (currentTheme === "dark") {
-      return <button onClick={() => setTheme("light")}>SunIcon</button>
+      return (
+        <button
+          className="border-none text-yellow-500"
+          onClick={() => setTheme("light")}
+        >
+          <SunLogo />
+        </button>
+      )
     } else {
-      return <button onClick={() => setTheme("dark")}>MoonIcon</button>
+      return (
+        <button className="border-none" onClick={() => setTheme("dark")}>
+          <MoonLogo />
+        </button>
+      )
     }
   }
 
   return (
-    <header className="p-4 dark:bg-gray-700 dark:text-gray-100 bg-gray-200">
-      <div className="container flex justify-between h-16 mx-auto">
-        <div>
-          <a
+    <header className="p-2 dark:bg-gray-700 dark:text-gray-100 bg-gray-200">
+      <div className="container flex-col  justify-between m-auto ">
+        <div className="flex justify-between">
+          <Link
             rel="noopener noreferrer"
-            href="#"
+            href="/"
             aria-label="Back to homepage"
-            className="flex items-center p-2"
+            className="flex items-center p-2 font-bold text-2xl md:text-4xl"
           >
-            Gunvant Sharma
-          </a>
+            G.S.LABS
+          </Link>
           {renderThemeChanger()}
         </div>
 
-        <ul className="items-stretch hidden space-x-3 lg:flex">
+        <ul className="items-center justify-center flex border-2 border-gray-500 p-1">
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400"
+              href="/"
+              className="flex items-center px-4 link"
             >
-              Link
-            </a>
+              Home
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
+              href="https://github.com/gunvant8008"
+              className="flex items-center px-4 link"
+              target="_blank"
             >
-              Link
-            </a>
+              GitHub
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
+              href="https://www.linkedin.com/in/gunvant-sharma-006057b2/"
+              className="flex items-center px-4 link"
+              target="_blank"
             >
-              Link
-            </a>
+              LinkedIn
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
+              href="/contact"
+              className="flex items-center px-4  link"
             >
-              Link
-            </a>
+              Contact
+            </Link>
           </li>
         </ul>
-        <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="self-center px-8 py-3 rounded">Sign in</button>
-          <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
-            Sign up
-          </button>
-        </div>
-        <button className="p-4 lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6 dark:text-gray-100"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
       </div>
     </header>
   )
@@ -112,7 +105,7 @@ function Footer() {
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className=" flex flex-col min-h-screen">
       <Header />
       <main className="container mx-auto flex-1">{children}</main>
       <Footer />

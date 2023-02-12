@@ -3,3 +3,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgba(128, 128, 128, 0.519);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 1px solid;
+  margin: 5px;
+}
+div {
+  word-wrap: break-word;
+}
+
+section {
+  border: 3px dotted black;
+  margin: 2rem;
+  box-shadow: 10px 10px 0px black;
+  background-color: rgba(128, 128, 128, 0.492);
+}
+input {
+  @apply p-2 border-2 border-gray-500 my-1;
+}
+textarea {
+  @apply p-2 border-2 border-gray-500 my-1;
+}
+
+.link {
+  @apply hover:bg-white ease-in duration-200 dark:hover:text-black;
+}

@@ -1,6 +1,7 @@
 import fs from "fs"
 import matter from "gray-matter"
 import md from "markdown-it"
+import Link from "next/link"
 
 export async function getStaticPaths() {
   // Retrieve all our slugs
@@ -34,9 +35,20 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   console.log(frontmatter)
   return (
-    <div className="prose mx-auto">
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    <div className="prose mt-20 p-10  flex flex-col items-center justify-center w-[95vw] ">
+      <h1 className="text-2xl md:text-4xl dark:text-white">
+        {frontmatter.title}
+      </h1>
+      <div
+        className="md:w-[1200px] md:text-xl w-[350px]  bg-gray-300 p-10"
+        dangerouslySetInnerHTML={{ __html: md().render(content) }}
+      />
+      <Link
+        className="self-center px-8 py-3 rounded border-2 border-white m-4 font-bold "
+        href={`/blogs`}
+      >
+        Go Back
+      </Link>
     </div>
   )
 }
