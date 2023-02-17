@@ -19,7 +19,9 @@ const Hero = () => {
           </h1>
           <p className="px-8 mt-8 mb-12 text-lg font-bold">
             CURRENT FAMILY- HTML, CSS, JAVASCRIPT, REACTJS, NEXTJS, TAILWIND,
-            SASS
+            SASS, GIT
+            <br />
+            WORKING ON- FRONT-END DESIGN & ARCHITECTURE, API DESIGN
           </p>
           <div className="flex flex-wrap justify-center">
             <Link

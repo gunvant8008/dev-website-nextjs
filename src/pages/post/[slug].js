@@ -35,15 +35,15 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   return (
     <div className="prose mt-20 p-10  flex flex-col items-center justify-center w-[95vw] ">
-      <h1 className="text-2xl md:text-4xl dark:text-white">
+      <h1 className="text-2xl md:text-4xl dark:text-white ">
         {frontmatter.title}
       </h1>
       <div
-        className="md:w-[1200px] md:text-xl w-[350px]  bg-gray-300 p-10"
+        className=" w-[400px] sm:w-[500px]  md:w-[1200px] md:text-xl   bg-gray-300 p-10"
         dangerouslySetInnerHTML={{ __html: md().render(content) }}
       />
       <Link
-        className="self-center px-8 py-3 rounded border-2 border-white m-4 font-bold "
+        className="self-center px-8 py-3 rounded border-2 border-white m-4 font-bold dark:text-white"
         href={`/blogs`}
       >
         Go Back

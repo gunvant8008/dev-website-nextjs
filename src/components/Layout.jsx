@@ -34,7 +34,7 @@ function Header() {
   }
 
   return (
-    <header className="p-2 dark:bg-gray-700 dark:text-gray-100 bg-gray-200">
+    <header className="p-2 dark:bg-dark-4 dark:text-gray-100 bg-light-1">
       <div className="container flex-col  justify-between m-auto ">
         <div className="flex justify-between">
           <Link
@@ -95,7 +95,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className=" mt-8 py-4 dark:bg-gray-700 bg-gray-200">
+    <footer className=" mt-8 py-4 dark:bg-dark-4 bg-light-1">
       <div className="container mx-auto flex justify-center">
         &copy; 2023 GS.Labs
       </div>
