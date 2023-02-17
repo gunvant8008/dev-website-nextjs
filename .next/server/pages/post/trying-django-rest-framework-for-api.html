@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en" class="dark font-IBM"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/css/fdd8d467fc4feecc.css" as="style"/><link rel="stylesheet" href="/_next/static/css/fdd8d467fc4feecc.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-8fa1640cc84ba8fe.js" defer=""></script><script src="/_next/static/chunks/framework-cda2f1305c3d9424.js" defer=""></script><script src="/_next/static/chunks/main-f11614d8aa7ee555.js" defer=""></script><script src="/_next/static/chunks/pages/_app-b07f67abe6fc8daf.js" defer=""></script><script src="/_next/static/chunks/980-add53cc9f513d88a.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-fa4ea29945882996.js" defer=""></script><script src="/_next/static/BNBwICA9g0C_ZmO6q91BF/_buildManifest.js" defer=""></script><script src="/_next/static/BNBwICA9g0C_ZmO6q91BF/_ssgManifest.js" defer=""></script></head><body><div id="__next"><script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script><div class=" flex flex-col min-h-screen"><header class="p-2 dark:bg-dark-4 dark:text-gray-100 bg-light-1"><div class="container flex-col justify-between m-auto "><div class="flex justify-between"><a rel="noopener noreferrer" aria-label="Back to homepage" class="flex items-center p-2 font-bold text-2xl md:text-4xl" href="/">G.S.LABS</a></div><ul class="items-center justify-center flex border-2 border-gray-500 p-1"><li class="flex"><a rel="noopener noreferrer" class="flex items-center px-4 link" href="/">Home</a></li><li class="flex"><a rel="noopener noreferrer" class="flex items-center px-4 link" target="_blank" href="https://github.com/gunvant8008">GitHub</a></li><li class="flex"><a rel="noopener noreferrer" class="flex items-center px-4 link" target="_blank" href="https://www.linkedin.com/in/gunvant-sharma-006057b2/">LinkedIn</a></li><li class="flex"><a rel="noopener noreferrer" class="flex items-center px-4 link" href="/contact">Contact</a></li></ul></div></header><main class="container mx-auto flex-1"><div class="prose mt-20 p-10 flex flex-col items-center justify-center w-[95vw] "><h1 class="text-2xl md:text-4xl dark:text-white ">TRYING DJANGO REST FRAMEWORK FOR APIs</h1><div class=" w-[400px] sm:w-[500px] md:w-[1200px] md:text-xl bg-gray-300 p-10"><h1>Trying django rest framework</h1>
+<p>Recently i was working on a CRM and wanted to experiment with any API framework to create the backend for this new project.</p>
+<p>I really liked the overall experience from start to finish.</p>
+<p>I had no prior python knowledge but the documentation &amp; the support from the community is so good that i was able to build required apis within hours.</p>
+<p>Will share some of my learning in this post.</p>
+<h2>What is Django Rest Framework?</h2>
+<p>Django is a popular web framework for building web applications in Python. While it's great for creating web pages, sometimes you need to create an API for your application. This is where Django Rest Framework (DRF) comes in. In this blog post, we'll explore what DRF is, why it's useful, and how to use it to create APIs.</p>
+<p>Django Rest Framework is a third-party package that allows you to easily create RESTful APIs in Django. It provides a set of tools and libraries that make it easy to serialize and deserialize data, handle requests and responses, and authenticate users.</p>
+<p>Why use Django Rest Framework?</p>
+<p>There are several reasons why you might want to use DRF to create APIs for your Django application:</p>
+<ol>
+<li>
+<p>It's easy to use: DRF provides a simple and intuitive interface for creating APIs. You don't need to write a lot of code to get started, and it's easy to add new functionality as your needs grow.</p>
+</li>
+<li>
+<p>It's customizable: DRF provides a lot of customization options, so you can tailor your API to your specific needs. You can customize the serialization and deserialization process, add authentication and permissions, and much more.</p>
+</li>
+<li>
+<p>It's well-documented: DRF has excellent documentation, with a lot of examples and tutorials. This makes it easy to get started and learn how to use the framework.</p>
+</li>
+<li>
+<p>It's widely used: DRF is a popular package with a large community of users. This means that there are a lot of resources available, including plugins, extensions, and third-party libraries.</p>
+</li>
+</ol>
+<h2>How to use Django Rest Framework to create APIs</h2>
+<p>Here are the basic steps to create an API using DRF:</p>
+<ol>
+<li>Install DRF: The first step is to install DRF. You can do this using pip, by running the following command in your terminal:</li>
+</ol>
+<pre><code class="language-py">pip install djangorestframework
+</code></pre>
+<ol start="2">
+<li>
+<p>Create a serializer: A serializer is a class that converts complex data types (such as models) into JSON, which is the format used by most APIs. You can create a serializer by defining a class that extends the [serializers.Serializer] class, and specifying the fields that you want to include.</p>
+</li>
+<li>
+<p>Create a view: A view is a function or class that handles requests and returns responses. You can create a view by defining a function or class that extends the [views.APIView] class, and defining the methods that you want to support (such as [get()] or [post()]).</p>
+</li>
+<li>
+<p>Define the URL: Finally, you need to define the URL for your API. You can do this by adding a new entry to your urls.py file, and specifying the URL pattern and the view that should handle it.</p>
+</li>
+</ol>
+<p>Here's an example of what the code might look like for a simple API that returns a list of books:</p>
+<pre><code class="language-js"># serializers.py
+from rest_framework import serializers
+from .models import Book
+
+class BookSerializer(serializers.Serializer):
+    title = serializers.CharField()
+    author = serializers.CharField()
+    published_date = serializers.DateField()
+
+# views.py
+from rest_framework import views, response
+from .models import Book
+from .serializers import BookSerializer
+
+class BookListView(views.APIView):
+    def get(self, request):
+        books = Book.objects.all()
+        serializer = BookSerializer(books, many=True)
+        return response.Response(serializer.data)
+
+# urls.py
+from django.urls import path
+from .views import BookListView
+
+urlpatterns = [
+    path('books/', BookListView.as_view(), name='book-list'),
+]
+</code></pre>
+<p>For complete guide &amp; documentation please visit- <a href="https://www.django-rest-framework.org/tutorial/quickstart/">Django-Rest-Documentation</a></p>
+<h3>Thank you for reading, and let's connect!</h3>
+<p>Thank you for reading my blog. Feel free to connect on <a href="https://www.linkedin.com/in/gunvantsharma/">LinkedIn</a>
+or <a href="https://github.com/gunvant8008">GitHub</a>.</p>
+</div><a class="self-center px-8 py-3 rounded border-2 border-white m-4 font-bold dark:text-white" href="/blogs">Go Back</a></div></main><footer class=" mt-8 py-4 dark:bg-dark-4 bg-light-1"><div class="container mx-auto flex justify-center">© 2023 GS.Labs</div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"frontmatter":{"title":"TRYING DJANGO REST FRAMEWORK FOR APIs","metaTitle":"Django rest framework for api creation","metaDesc":"creating easy and fast secure api with django rest","socialImage":"images/restApiDjango.png","date":"2023-02-18","tags":["Django rest api Framework","Api"]},"content":"\n# Trying django rest framework\n\nRecently i was working on a CRM and wanted to experiment with any API framework to create the backend for this new project.\n\nI really liked the overall experience from start to finish.\n\nI had no prior python knowledge but the documentation \u0026 the support from the community is so good that i was able to build required apis within hours.\n\nWill share some of my learning in this post.\n\n## What is Django Rest Framework?\n\nDjango is a popular web framework for building web applications in Python. While it's great for creating web pages, sometimes you need to create an API for your application. This is where Django Rest Framework (DRF) comes in. In this blog post, we'll explore what DRF is, why it's useful, and how to use it to create APIs.\n\nDjango Rest Framework is a third-party package that allows you to easily create RESTful APIs in Django. It provides a set of tools and libraries that make it easy to serialize and deserialize data, handle requests and responses, and authenticate users.\n\nWhy use Django Rest Framework?\n\nThere are several reasons why you might want to use DRF to create APIs for your Django application:\n\n1. It's easy to use: DRF provides a simple and intuitive interface for creating APIs. You don't need to write a lot of code to get started, and it's easy to add new functionality as your needs grow.\n\n2. It's customizable: DRF provides a lot of customization options, so you can tailor your API to your specific needs. You can customize the serialization and deserialization process, add authentication and permissions, and much more.\n\n3. It's well-documented: DRF has excellent documentation, with a lot of examples and tutorials. This makes it easy to get started and learn how to use the framework.\n\n4. It's widely used: DRF is a popular package with a large community of users. This means that there are a lot of resources available, including plugins, extensions, and third-party libraries.\n\n## How to use Django Rest Framework to create APIs\n\nHere are the basic steps to create an API using DRF:\n\n1. Install DRF: The first step is to install DRF. You can do this using pip, by running the following command in your terminal:\n\n```py\npip install djangorestframework\n```\n\n2. Create a serializer: A serializer is a class that converts complex data types (such as models) into JSON, which is the format used by most APIs. You can create a serializer by defining a class that extends the [serializers.Serializer] class, and specifying the fields that you want to include.\n\n3. Create a view: A view is a function or class that handles requests and returns responses. You can create a view by defining a function or class that extends the [views.APIView] class, and defining the methods that you want to support (such as [get()] or [post()]).\n\n4. Define the URL: Finally, you need to define the URL for your API. You can do this by adding a new entry to your urls.py file, and specifying the URL pattern and the view that should handle it.\n\nHere's an example of what the code might look like for a simple API that returns a list of books:\n\n```js\n# serializers.py\nfrom rest_framework import serializers\nfrom .models import Book\n\nclass BookSerializer(serializers.Serializer):\n    title = serializers.CharField()\n    author = serializers.CharField()\n    published_date = serializers.DateField()\n\n# views.py\nfrom rest_framework import views, response\nfrom .models import Book\nfrom .serializers import BookSerializer\n\nclass BookListView(views.APIView):\n    def get(self, request):\n        books = Book.objects.all()\n        serializer = BookSerializer(books, many=True)\n        return response.Response(serializer.data)\n\n# urls.py\nfrom django.urls import path\nfrom .views import BookListView\n\nurlpatterns = [\n    path('books/', BookListView.as_view(), name='book-list'),\n]\n```\n\nFor complete guide \u0026 documentation please visit- [Django-Rest-Documentation](https://www.django-rest-framework.org/tutorial/quickstart/)\n\n### Thank you for reading, and let's connect!\n\nThank you for reading my blog. Feel free to connect on [LinkedIn](https://www.linkedin.com/in/gunvantsharma/)\nor [GitHub](https://github.com/gunvant8008).\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"trying-django-rest-framework-for-api"},"buildId":"BNBwICA9g0C_ZmO6q91BF","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
