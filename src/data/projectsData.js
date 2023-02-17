@@ -17,7 +17,8 @@ const projectsData = [
     title: "Personal Blog & Portfolio",
     github: "#",
     demo: "#",
-    design: "#",
+    design:
+      "https://github.com/gunvant8008/personal-blog-next-tcss/blob/main/public/Personal%20Blog%20Design.png",
     category: "Personal Blog",
     description:
       "Blazing fast static blog and personal website using markdown files and nextjs with dark & light theme.",
