@@ -1,7 +1,7 @@
 import React from "react"
 import projectsData from "@/data/projectsData"
 import Link from "next/link"
-import ArrowLogo from "@/components/logoIcons/arrowLogo"
+// import ArrowLogo from "@/components/logoIcons/arrowLogo"
 
 function ProjectCard({ project }) {
   return (
