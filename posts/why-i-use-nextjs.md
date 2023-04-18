@@ -9,7 +9,7 @@ tags:
   - reactjs
 ---
 
-## Why i lover to use Next JS during prototype development & in small projects
+## Why i love to use Next JS during prototype development & in small projects
 
 I will keep it short.
 

@@ -43,7 +43,7 @@ function Header() {
             aria-label="Back to homepage"
             className="flex items-center p-2 font-bold text-2xl md:text-4xl"
           >
-            G.S.LABS
+            G.S.Labs
           </Link>
           {renderThemeChanger()}
         </div>
@@ -97,7 +97,7 @@ function Footer() {
   return (
     <footer className=" mt-8 py-4 dark:bg-dark-4 bg-light-1">
       <div className="container mx-auto flex justify-center">
-        &copy; 2023 GS.Labs
+        &copy; 2023 G.S.Labs
       </div>
     </footer>
   )
