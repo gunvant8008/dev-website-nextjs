@@ -1,5 +1,17 @@
 const projectsData = [
   {
+    id: 0,
+    image: "images/projectImages/00UrjaaFitness.png",
+    title: "Fitness Store",
+    github: "https://github.com/gunvant8008/UrjaaFitness.com-WP",
+    demo: "https://urjaafitness.com/",
+    design: "https://github.com/gunvant8008/UrjaaFitness.com-WP",
+    category: "Online Store",
+    description:
+      "This is a fitness landing page with an online store where clients can buy fitness programs. Clients can pay online using different payment methods.",
+    technologies: ["Wordpress", "Woocommerce", "Razorpay"]
+  },
+  {
     id: 1,
     image: "images/projectImages/01AdminDashboard.png",
     title: "Admin Dashboard",
