@@ -10,12 +10,26 @@ function ProjectCard({ project }) {
         <img src={project.image} />
       </div>
       <div>
-        <p>
-          <span className="dark:text-yellow-500 font-bold text-yellow-800">
-            Category:
-          </span>
-          {project.category}
-        </p>
+        <div className="flex justify-between">
+          <p>
+            <span className="dark:text-yellow-500 font-bold text-yellow-800">
+              Category:
+            </span>
+            {project.category}
+          </p>
+          <p
+            className={`${
+              project.status === "Completed"
+                ? " border-2 border-dashed border-green-600 p-1"
+                : "border-2 border-dashed border-red-600 p-1"
+            }`}
+          >
+            <span className="dark:text-yellow-500 font-bold text-yellow-800">
+              Status:
+            </span>
+            {project.status}
+          </p>
+        </div>
         <h1>
           <span className="dark:text-yellow-500 font-bold text-yellow-800">
             Title:

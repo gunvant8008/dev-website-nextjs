@@ -9,20 +9,22 @@ const projectsData = [
     category: "Online Store",
     description:
       "This is a fitness landing page with an online store where clients can buy fitness programs. Clients can pay online using different payment methods.",
-    technologies: ["Wordpress", "Woocommerce", "Razorpay"]
+    technologies: ["Wordpress", "Woocommerce", "Razorpay"],
+    status: "Completed"
   },
   {
     id: 1,
-    image: "images/projectImages/01AdminDashboard.png",
-    title: "Admin Dashboard",
-    github: "https://github.com/gunvant8008/admin-dashboard-react",
-    demo: "https://admin-dashboard-react-ten.vercel.app",
+    image: "images/projectImages/01iGyanam.png",
+    title: "SAAS Business Website",
+    github: "https://github.com/gunvant8008/igyanam.com-nextjs-contentful",
+    demo: "https://igyanam.vercel.app",
     design:
-      "https://github.com/gunvant8008/admin-dashboard-react/blob/main/README.md",
-    category: "Admin Dashboard",
+      "https://github.com/gunvant8008/igyanam.com-nextjs-contentful/blob/main/README.md",
+    category: "Website with CMS",
     description:
-      "Admin dashboard with dark & light theme, sidebar, navbar and many more.In this demo admin can manage users for now.",
-    technologies: ["React", "SCSS", "Material-UI", "Firebase"]
+      "A clean and simple business website with a content management system. Project is in progress. ",
+    technologies: ["Next.js", "Contentful CMS", "Tailwind", "Figma"],
+    status: "In Progress"
   },
   {
     id: 2,
@@ -35,7 +37,8 @@ const projectsData = [
     category: "Blog",
     description:
       "Blazing fast static blog and personal website using markdown files and nextjs with dark & light theme.",
-    technologies: ["NextJS", "Tailwind"]
+    technologies: ["NextJS", "Tailwind"],
+    status: "Completed"
   },
   {
     id: 3,
@@ -48,7 +51,8 @@ const projectsData = [
     category: "Web App",
     description:
       "Get live cryptocurrencies prices, used coingecko api for live data.",
-    technologies: ["React", "Tailwind", "Coingecko-api"]
+    technologies: ["React", "Tailwind", "Coingecko-api"],
+    status: "Completed"
   },
   {
     id: 4,
@@ -60,7 +64,8 @@ const projectsData = [
       "https://github.com/gunvant8008/loan-calculator-react-tcss/blob/main/images/Loan%20Calculator-Page-1.drawio%20(1).png",
     category: "Web App",
     description: "Get instant loan details by interactive range selectors.",
-    technologies: ["React", "Tailwind"]
+    technologies: ["React", "Tailwind"],
+    status: "Completed"
   },
   {
     id: 5,
@@ -72,7 +77,8 @@ const projectsData = [
       "https://github.com/gunvant8008/countries-visual-data-react-tcss/blob/main/README.md",
     category: "Web App",
     description: "Countries data display app ",
-    technologies: ["React", "Tailwind", "Countries-api"]
+    technologies: ["React", "Tailwind", "Countries-api"],
+    status: "Completed"
   }
 ]
 
