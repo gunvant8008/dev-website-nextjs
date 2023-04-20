@@ -62,7 +62,7 @@ function Header() {
               <Link
                 rel="noopener noreferrer"
                 href="/"
-                className="link flex items-center px-4 py-1"
+                className="link sm:px-4 flex items-center px-2 py-1"
               >
                 <AiFillHome className="text-2xl" />
               </Link>
@@ -73,7 +73,7 @@ function Header() {
               <Link
                 rel="noopener noreferrer"
                 href="https://github.com/gunvant8008"
-                className="link flex items-center px-4 py-1"
+                className="link sm:px-4 flex items-center px-2 py-1"
                 target="_blank"
               >
                 <AiFillGithub className="text-2xl" />
@@ -85,7 +85,7 @@ function Header() {
               <Link
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/gunvant-sharma-006057b2/"
-                className="link flex items-center px-4 py-1"
+                className="link sm:px-4 flex items-center px-2 py-1"
                 target="_blank"
               >
                 <AiFillLinkedin className="text-2xl" />
@@ -97,7 +97,7 @@ function Header() {
               <Link
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/gunvant_urjaa/"
-                className="link flex items-center px-4 py-1"
+                className="link sm:px-4 flex items-center px-2 py-1"
                 target="_blank"
               >
                 <AiFillInstagram className="text-2xl" />
@@ -109,7 +109,7 @@ function Header() {
               <Link
                 rel="noopener noreferrer"
                 href="/contact"
-                className="link flex items-center px-4 py-1"
+                className="link sm:px-4 flex items-center px-2 py-1"
               >
                 <AiFillContacts className="text-2xl" />
               </Link>
@@ -119,7 +119,7 @@ function Header() {
             <Link
               rel="noopener noreferrer"
               href="/projects"
-              className="link flex items-center px-4 py-1"
+              className="link sm:px-4 flex items-center px-2 py-1"
             >
               Projects
             </Link>
@@ -128,7 +128,7 @@ function Header() {
             <Link
               rel="noopener noreferrer"
               href="/blogs"
-              className="link flex items-center px-4 py-1"
+              className="link sm:px-4 flex items-center px-2 py-1"
             >
               Blogs
             </Link>
