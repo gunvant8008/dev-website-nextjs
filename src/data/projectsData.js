@@ -1,11 +1,32 @@
 const projectsData = [
   {
     id: 0,
-    image: "images/projectImages/00UrjaaFitness.png",
+    image: "images/projectImages/00crmDashboard.png",
+    title: "User & Sales Dashboard",
+    github: "https://github.com/gunvant8008/Institute-crm",
+    demo: "https://institute-crm.vercel.app/",
+    design: "https://github.com/gunvant8008/Institute-crm/blob/main/README.md",
+    category: "Web App",
+    description:
+      "This is a simple user and sales dashboard for a SAAS business. Used react-query for optimistic updates and caching. Mock service worker is used for mocking api calls. Zod is used for data validation.",
+    technologies: [
+      "NextJS",
+      "React-Query",
+      "Zod",
+      "Mock Service Worker",
+      "Tailwind",
+      "Jest"
+    ],
+    status: "In Progress"
+  },
+  {
+    id: 1,
+    image: "images/projectImages/01UrjaaFitness.png",
     title: "Fitness Store",
     github: "https://github.com/gunvant8008/UrjaaFitness.com-WP",
     demo: "https://urjaafitness.com/",
-    design: "https://github.com/gunvant8008/UrjaaFitness.com-WP",
+    design:
+      "https://github.com/gunvant8008/UrjaaFitness.com-WP/blob/main/README.md",
     category: "Online Store",
     description:
       "This is a fitness landing page with an online store where clients can buy fitness programs. Clients can pay online using different payment methods.",
@@ -13,7 +34,7 @@ const projectsData = [
     status: "Completed"
   },
   {
-    id: 1,
+    id: 2,
     image: "images/projectImages/01iGyanam.png",
     title: "SAAS Business Website",
     github: "https://github.com/gunvant8008/igyanam.com-nextjs-contentful",
@@ -27,7 +48,7 @@ const projectsData = [
     status: "In Progress"
   },
   {
-    id: 2,
+    id: 3,
     image: "images/projectImages/02BlogApp.jpeg",
     title: "Personal Blog & Portfolio",
     github: "https://github.com/gunvant8008/personal-blog-portfolio-next-tcss",
@@ -41,7 +62,7 @@ const projectsData = [
     status: "Completed"
   },
   {
-    id: 3,
+    id: 4,
     image: "images/projectImages/03CryptoApp.jpeg",
     title: "Live Crypto Market",
     github: "https://github.com/gunvant8008/02-crypto-api-react-tcss",
@@ -52,32 +73,6 @@ const projectsData = [
     description:
       "Get live cryptocurrencies prices, used coingecko api for live data.",
     technologies: ["React", "Tailwind", "Coingecko-api"],
-    status: "Completed"
-  },
-  {
-    id: 4,
-    image: "images/projectImages/04LoanCalculator.png",
-    title: "Mortgage & EMI Calculator",
-    github: "https://github.com/gunvant8008/loan-calculator-react-tcss",
-    demo: "https://gunvant8008.github.io/loan-calculator-react-tcss/",
-    design:
-      "https://github.com/gunvant8008/loan-calculator-react-tcss/blob/main/images/Loan%20Calculator-Page-1.drawio%20(1).png",
-    category: "Web App",
-    description: "Get instant loan details by interactive range selectors.",
-    technologies: ["React", "Tailwind"],
-    status: "Completed"
-  },
-  {
-    id: 5,
-    image: "images/projectImages/countries-visual-data.jpeg",
-    title: "Countries Visual Data",
-    github: "https://github.com/gunvant8008/countries-visual-data-react-tcss",
-    demo: "https://gunvant8008.github.io/countries-visual-data-react-tcss/",
-    design:
-      "https://github.com/gunvant8008/countries-visual-data-react-tcss/blob/main/README.md",
-    category: "Web App",
-    description: "Countries data display app ",
-    technologies: ["React", "Tailwind", "Countries-api"],
     status: "Completed"
   }
 ]

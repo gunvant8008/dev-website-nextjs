@@ -10,7 +10,7 @@ function ProjectCard({ project }) {
         <img src={project.image} />
       </div>
       <div>
-        <div className="flex justify-between">
+        <div className="sm:flex-row flex flex-col justify-between">
           <p>
             <span className="dark:text-yellow-500 font-bold text-yellow-800">
               Category:
