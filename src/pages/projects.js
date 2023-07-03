@@ -1,7 +1,6 @@
 import React from "react"
 import projectsData from "@/data/projectsData"
 import Link from "next/link"
-// import ArrowLogo from "@/components/logoIcons/arrowLogo"
 
 function ProjectCard({ project }) {
   return (
@@ -49,14 +48,30 @@ function ProjectCard({ project }) {
           {project.technologies.join()}
         </p>
         <div className="dark:border-gray-200 flex justify-around p-1 mt-2 text-white border-2 border-gray-700 border-dashed">
-          <Link target="_blank" className="project-link " href={project.github}>
-            CODE
+          <Link
+            target="_blank"
+            className={
+              project.private
+                ? "project-link pointer-events-none"
+                : "project-link"
+            }
+            href={project.github}
+          >
+            {project.private ? "CODE PRIVATE" : "CODE"}
           </Link>
           <Link target="_blank" className="project-link" href={project.demo}>
             DEMO
           </Link>
-          <Link target="_blank" className="project-link" href={project.design}>
-            DESIGN
+          <Link
+            target="_blank"
+            className={
+              project.private
+                ? "project-link pointer-events-none"
+                : "project-link"
+            }
+            href={project.design}
+          >
+            {project.private ? "DESIGN PRIVATE" : "DESIGN"}
           </Link>
         </div>
       </div>
